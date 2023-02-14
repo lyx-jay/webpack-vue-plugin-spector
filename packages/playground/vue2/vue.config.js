@@ -7,8 +7,8 @@ module.exports = defineConfig({
     config.module
       .rule('vue')
       .test(/\.vue$/)
-      .use('@inspector/loader')
-      .loader('@inspector/loader')
+      .use('@webpack-vue-plugin-inspector/loader')
+      .loader('@webpack-vue-plugin-inspector/loader')
       .end();
   }
 })
