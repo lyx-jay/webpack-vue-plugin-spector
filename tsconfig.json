@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "outDir": "./",
     "jsx": "preserve",
     "target": "esnext",
     "module": "esnext",
@@ -7,5 +8,9 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "allowJs": true
-  }
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
 }
