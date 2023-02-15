@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "@webpack-vue-plugin-inspector/loader": "workspace:1.0.0",
+    "@webpack-vue-plugin-inspector/plugin": "workspace:1.0.0",
     "core-js": "^3.8.3",
     "vue": "^2.6.14"
   },

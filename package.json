@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build:loader": "pnpm -r --filter '@webpack-vue-plugin-inspector/loader' build",
+    "build:plugin": "pnpm -r --filter '@webpack-vue-plugin-inspector/plugin' build",
     "dev:vue2": "pnpm run build:loader && pnpm -r --filter @playground/vue2 serve",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"

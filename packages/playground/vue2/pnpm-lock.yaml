@@ -4,12 +4,14 @@ specifiers:
   '@vue/cli-plugin-babel': ~5.0.0
   '@vue/cli-service': ~5.0.0
   '@webpack-vue-plugin-inspector/loader': workspace:1.0.0
+  '@webpack-vue-plugin-inspector/plugin': workspace:1.0.0
   core-js: ^3.8.3
   vue: ^2.6.14
   vue-template-compiler: ^2.6.14
 
 dependencies:
   '@webpack-vue-plugin-inspector/loader': link:../../core/loader
+  '@webpack-vue-plugin-inspector/plugin': link:../../core/unplugin
   core-js: 3.28.0
   vue: 2.7.14
 
