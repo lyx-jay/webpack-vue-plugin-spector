@@ -9,5 +9,9 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@vue/compiler-core": "^3.2.47",
+    "@vue/compiler-sfc": "^3.2.47"
+  }
 }

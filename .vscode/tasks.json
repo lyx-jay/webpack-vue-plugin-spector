@@ -1,0 +1,12 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "dev:vue2",
+			"problemMatcher": [],
+			"label": "npm: dev:vue2",
+			"detail": "pnpm run build:loader && pnpm -r --filter @playground/vue2 serve"
+		}
+	]
+}
