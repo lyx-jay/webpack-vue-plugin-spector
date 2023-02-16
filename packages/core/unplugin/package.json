@@ -2,12 +2,14 @@
   "name": "@webpack-vue-plugin-inspector/plugin",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsup src/**/*.ts"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "html-webpack-plugin": "^5.5.0"
+  }
 }
