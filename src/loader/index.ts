@@ -1,7 +1,7 @@
 import { parse } from '@vue/compiler-sfc';
 import injectDom from './utils';
 
-module.exports = function (this: any, content: any) {
+export default function (this: any, content: any) {
 
   // absolute path
   const filePath = this.resourcePath
@@ -10,7 +10,7 @@ module.exports = function (this: any, content: any) {
   const type = params.get('type')
   if (type === 'template') {
     const contentAfterParased = parse(content)
-    const domAst = contentAfterParased.descriptor.template.ast
+    const domAst = contentAfterParased.descriptor.template!.ast
     // original template
     const originalTemplate = domAst.loc.source
     // new template
