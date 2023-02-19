@@ -5,8 +5,9 @@
   "repository": "https://github.com/lyx-jay/webpack-vue-plugin-spector.git",
   "author": "lvyuanxin <lyxjay1005@163.com>",
   "scripts": {
-    "build": "tsc"
+    "build": "rm -rf dist && tsc"
   },
+  "type": "module",
   "license": "MIT",
   "dependencies": {
     "@vue/compiler-core": "^3.2.47",
