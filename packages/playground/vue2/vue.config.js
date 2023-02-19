@@ -1,10 +1,12 @@
-const InspectorPlugin = require('@webpack-vue-plugin-inspector/plugin')
+// const InspectorPlugin = require('@webpack-vue-plugin-inspector/plugin')
 const { defineConfig } = require('@vue/cli-service')
 
 module.exports = defineConfig({
   transpileDependencies: true,
-  configureWebpack: {
-    plugins: [new InspectorPlugin()]
+  devServer: {
+    setupMiddlewares: () => {
+      return [launchEditorMiddleware]
+    },
   },
   chainWebpack: config => {
     config.module

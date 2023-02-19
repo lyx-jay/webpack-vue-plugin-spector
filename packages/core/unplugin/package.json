@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "html-webpack-plugin": "^5.5.0"
+    "express": "^4.18.2",
+    "launch-editor": "^2.6.0"
   }
 }
