@@ -3,6 +3,12 @@
   "version": "1.0.0",
   "repository": "https://github.com/lyx-jay/webpack-vue-plugin-spector.git",
   "author": "lvyuanxin <lyxjay1005@163.com>",
+  "keywords": [
+    "webpack",
+    "vue",
+    "inspector",
+    "ide"
+  ],
   "scripts": {
     "build": "rm -rf dist && unbuild"
   },
