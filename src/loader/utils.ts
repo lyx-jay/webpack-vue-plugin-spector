@@ -4,7 +4,7 @@ import {
   InjectLineName,
   InjectNodeName,
   InjectPathName
-} from './constant';
+} from '../common/constant';
 
 function injectDom(domAst: ElementNode, filePath: string, source: string) {
 

@@ -1,11 +1,16 @@
 import type { RequestHandler, Response } from 'express'
 import type { IncomingMessage, ServerResponse } from 'http'
-import { OPEN_CODE_API } from './constant'
+import { OPEN_CODE_API } from '../common/constant'
 import launch from 'launch-editor'
 
-
+/**
+ * locate editor file by filePath
+ * @param filePath request file path
+ * @param res response
+ */
 export const openEditor = (filePath: string, res: Response | ServerResponse<IncomingMessage>) => {
   if (filePath) {
+    filePath = filePath.replace(OPEN_CODE_API + '=', '')
     launch(filePath, () => {
       console.log('To specify an editor, specify the EDITOR env variable')
     })

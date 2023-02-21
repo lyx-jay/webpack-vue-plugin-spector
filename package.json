@@ -1,13 +1,33 @@
 {
   "name": "webpack-vue-plugin-inspector",
   "version": "1.0.0",
-  "main": "./dist/index.js",
   "repository": "https://github.com/lyx-jay/webpack-vue-plugin-spector.git",
   "author": "lvyuanxin <lyxjay1005@163.com>",
   "scripts": {
-    "build": "rm -rf dist && tsc"
+    "build": "rm -rf dist && unbuild"
   },
-  "type": "module",
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
+  },
+  "exports": {
+    "./unplugin": {
+      "require": "./dist/unplugin.cjs",
+      "import": "./dist/unplugin.mjs"
+    },
+    "./loader": {
+      "require": "./dist/loader.cjs",
+      "import": "./dist/loader.mjs"
+    },
+    "./client": {
+      "require": "./dist/client.cjs",
+      "import": "./dist/client.mjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
   "license": "MIT",
   "dependencies": {
     "@vue/compiler-core": "^3.2.47",
@@ -17,6 +37,7 @@
   },
   "devDependencies": {
     "@types/express": "^4.17.17",
-    "@types/node": "^18.14.0"
+    "@types/node": "^18.14.0",
+    "unbuild": "^1.1.2"
   }
 }
