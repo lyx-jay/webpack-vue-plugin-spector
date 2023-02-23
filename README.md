@@ -19,40 +19,28 @@ npm install webpack-vue-plugin-inspector -D
 
 only support webpack as so far
 
-#### First, add configure in `vue.config.js`
+* win: control(left) + click
+* mac: command(left) + click
 
-  ```
-const { domToCodeDevServerV5 } = require('webpack-vue-plugin-inspector/unplugin')
+```js
+const { webpackPlugin, domToCodeDevServerV5 } = require('webpack-vue-plugin-inspector/webpack')
 
 module.exports = defineConfig({
   ...
   devServer: {
     ...domToCodeDevServerV5
   },
-  chainWebpack: config => {
-    config.module
-      .rule('vue')
-      .test(/\.vue$/)
-      .use('webpack-vue-plugin-inspector/loader')
-      .loader('webpack-vue-plugin-inspector/loader')
-      .end();
+  configureWebpack: {
+    plugins: [
+      webpackPlugin({})
+      // or you can custom shortcuts
+      webpackPlugin({
+        key: 'your key shortcuts'
+      })
+    ]
   }
 })
-  ```
-
-
-#### Second, add init function in `src/main.js`
-
-```js
-import init from 'webpack-vue-plugin-inspector/client'
-
-init({
-  key: 'custom-key'
-})
 ```
-
-#### Third, press custom-key and click(use left mouse button) at the same time
-
 
 ## Attention
 
