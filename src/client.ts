@@ -1,13 +1,15 @@
 import {
   InitTypes,
   RequestServiceOptions
-} from '../types'
+} from './types'
 import {
   InjectColumnName,
   InjectLineName,
   InjectPathName,
   OPEN_CODE_API
-} from '../common/constant'
+} from './common/constant'
+
+
 
 /**
  * send request to open editor
@@ -27,6 +29,7 @@ const requestService = (options: RequestServiceOptions) => {
  * @param options custom key shortcuts
  */
 const init: InitTypes = (options) => {
+
   let key = ''
   const targetKey = options.key
   document.addEventListener('keydown', (e) => {
@@ -43,13 +46,6 @@ const init: InitTypes = (options) => {
       const col = dom!.getAttribute(InjectColumnName) as string
       const path = dom!.getAttribute(InjectPathName) as string
 
-      // console.log(
-      //   `
-      //   row: ${row},
-      //   col :${col},
-      //   path: ${path}
-      //   `
-      // )
       // 执行发送请求函数
       requestService({ row, col, path })
     }

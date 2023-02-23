@@ -1,7 +1,7 @@
 import { defineBuildConfig } from 'unbuild'
 
 export default defineBuildConfig({
-  entries: ['src/client', 'src/loader', 'src/unplugin'],
+  entries: ['src/webpack', 'src/webpack-loader', 'src/client', "src/client-loader"],
   clean: true,
   declaration: true,
   rollup: {
