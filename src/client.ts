@@ -9,6 +9,8 @@ import {
   OPEN_CODE_API
 } from './common/constant'
 
+
+
 /**
  * send request to open editor
  * @param filePathId 页面元素代码路径 hash id
@@ -27,6 +29,7 @@ const requestService = (options: RequestServiceOptions) => {
  * @param options custom key shortcuts
  */
 const init: InitTypes = (options) => {
+
   let key = ''
   const targetKey = options.key
   document.addEventListener('keydown', (e) => {
@@ -43,13 +46,6 @@ const init: InitTypes = (options) => {
       const col = dom!.getAttribute(InjectColumnName) as string
       const path = dom!.getAttribute(InjectPathName) as string
 
-      // console.log(
-      //   `
-      //   row: ${row},
-      //   col :${col},
-      //   path: ${path}
-      //   `
-      // )
       // 执行发送请求函数
       requestService({ row, col, path })
     }
