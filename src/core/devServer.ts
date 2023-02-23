@@ -1,3 +1,4 @@
+
 import type { RequestHandler, Response } from 'express'
 import type { IncomingMessage, ServerResponse } from 'http'
 import { OPEN_CODE_API } from '../common/constant'
@@ -37,4 +38,11 @@ export const launchEditorMiddleware: RequestHandler = (req, res, next) => {
 
 }
 
+
+export const domToCodeDevServerV5 = {
+  // for webpack 5
+  setupMiddlewares: (middlewares: any[] = []): any[] => {
+    return [launchEditorMiddleware, ...middlewares]
+  },
+}
 

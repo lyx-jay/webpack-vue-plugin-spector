@@ -1,13 +1,13 @@
 import {
   InitTypes,
   RequestServiceOptions
-} from '../types'
+} from './types'
 import {
   InjectColumnName,
   InjectLineName,
   InjectPathName,
   OPEN_CODE_API
-} from '../common/constant'
+} from './common/constant'
 
 /**
  * send request to open editor
