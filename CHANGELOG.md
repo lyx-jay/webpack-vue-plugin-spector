@@ -1,3 +1,12 @@
+## [1.0.4](https://github.com/lyx-jay/webpack-vue-plugin-spector/compare/v1.0.3...v1.0.4) (2023-02-24)
+
+
+### Bug Fixes
+
+* resolve export fun name conflict ([1dc6607](https://github.com/lyx-jay/webpack-vue-plugin-spector/commit/1dc6607d19ad863d3757c9f6eb353ecbe2c541e9))
+
+
+
 ## 1.0.3 (2023-02-24)
 
 
