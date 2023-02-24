@@ -1,6 +1,7 @@
 {
   "name": "webpack-vue-plugin-inspector",
-  "version": "1.0.2",
+  "version": "1.0.3",
+  "description": "A tool help you locate code in IDE",
   "repository": "https://github.com/lyx-jay/webpack-vue-plugin-spector.git",
   "author": "lvyuanxin <lyxjay1005@163.com>",
   "keywords": [
