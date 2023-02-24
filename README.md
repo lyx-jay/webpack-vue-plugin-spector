@@ -33,7 +33,11 @@ module.exports = defineConfig({
   configureWebpack: {
     plugins: [
       webpackPlugin({})
-      // or you can custom shortcuts
+    ]
+  }
+  // use custom key as shortcuts
+  configureWebpack: {
+    plugins: [
       webpackPlugin({
         key: 'your key shortcuts'
       })
