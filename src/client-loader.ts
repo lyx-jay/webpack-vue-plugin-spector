@@ -1,12 +1,12 @@
 import { getCurrentEnv } from './common/utils'
 
-
 const currentLoaderPath = __filename
 const ENV_KEY_MAP = {
   'mac': 'MetaLeft',
   'win': "ControlLeft"
 }
-
+const RANDOM_NUMBER: string = (Math.random() * 1000).toFixed()
+const EXPORT_DEFAULT_NAME = `init${RANDOM_NUMBER}`
 
 export default function (this: any, content: any) {
 
@@ -21,9 +21,9 @@ export default function (this: any, content: any) {
     }
   })
   const injectedContent = `
-  import init from 'webpack-vue-plugin-inspector/client'
+  import ${EXPORT_DEFAULT_NAME} from 'webpack-vue-plugin-inspector/client'
 
-  init({
+  ${EXPORT_DEFAULT_NAME}({
     key: '${key}'
   })
   `
