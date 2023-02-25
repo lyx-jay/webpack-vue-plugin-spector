@@ -1,8 +1,9 @@
 import { unplugin } from './core/plugin'
-import { domToCodeDevServerV5 } from './core/devServer'
+import { pluginServerV4, pluginServerV5 } from './core/devServer'
 
 export {
-  domToCodeDevServerV5
+  pluginServerV4,
+  pluginServerV5
 }
 
 export const webpackPlugin = unplugin.webpack

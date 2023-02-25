@@ -41,7 +41,7 @@ export const launchEditorMiddleware: RequestHandler = (req, res, next) => {
 /**
  * vue/cli@5.x.x devServer 配置
  */
-export const domToCodeDevServerV5 = {
+export const pluginServerV5 = {
   setupMiddlewares: (middlewares: any[] = []): any[] => {
     return [launchEditorMiddleware, ...middlewares]
   },
@@ -50,7 +50,7 @@ export const domToCodeDevServerV5 = {
 /**
  * vue/cli@4.x.x devServer 配置
  */
-export const domToCodeDevServerV4 = {
+export const pluginServerV4 = {
   // for webpack 4
   before: (app: any) => {
     app.use(launchEditorMiddleware)
