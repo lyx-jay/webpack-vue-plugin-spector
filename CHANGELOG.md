@@ -1,3 +1,12 @@
+## [1.0.5](https://github.com/lyx-jay/webpack-vue-plugin-spector/compare/v1.0.4...v1.0.5) (2023-02-25)
+
+
+### Bug Fixes
+
+* don't import devServer4 ([e6fda34](https://github.com/lyx-jay/webpack-vue-plugin-spector/commit/e6fda34fa8c7028a6dae3f560407b749b0da5553))
+
+
+
 ## [1.0.4](https://github.com/lyx-jay/webpack-vue-plugin-spector/compare/v1.0.3...v1.0.4) (2023-02-24)
 
 
