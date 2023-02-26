@@ -36,6 +36,8 @@ const init: InitTypes = (options) => {
       // 执行发送请求函数
       requestService(path)
     }
+    // reset key
+    key = ''
   })
 }
 
