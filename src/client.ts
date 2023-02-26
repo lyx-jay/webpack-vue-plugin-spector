@@ -24,8 +24,8 @@ const init: InitTypes = (options) => {
   document.addEventListener('keydown', (e) => {
     key = e.code
   })
-  document.addEventListener('click', (e) => {
-    if (key === targetKey) {
+  document.addEventListener('mousedown', (e) => {
+    if (key === targetKey && (e.button === 1 || e.button === 2)) {
       e.preventDefault()
       e.stopImmediatePropagation()
       e.stopPropagation()
@@ -35,10 +35,10 @@ const init: InitTypes = (options) => {
 
       // 执行发送请求函数
       requestService(path)
+      // reset key
+      key = ''
     }
-    // reset key
-    key = ''
-  })
+  }, true)
 }
 
 export default init
