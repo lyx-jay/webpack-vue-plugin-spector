@@ -19,11 +19,11 @@ npm install webpack-vue-plugin-inspector -D
 
 only support webpack as so far
 
-* win: control(left) + click
-* mac: command(left) + click
+* win(default): control(left) + click
+* mac(default): command(left) + click
 
 ```js
-const { webpackPlugin, domToCodeDevServerV5 } = require('webpack-vue-plugin-inspector/webpack')
+const { webpackPlugin, pluginServerV4, pluginServerV5} = require('webpack-vue-plugin-inspector/webpack')
 
 module.exports = defineConfig({
   ...
