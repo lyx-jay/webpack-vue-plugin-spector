@@ -25,3 +25,19 @@ export const getCurrentEnv = function () {
 export function createDomInfo(line: number, column: number, path: string) {
   return ` ${DOM_ATTR}='${path}:${line}:${column}'`
 }
+
+
+/**
+ * get import path according to vue/cli version
+ * @param version vue/cli version
+ */
+export function getImportPath(version: string): string {
+  switch (version) {
+    case 'v5':
+      return 'webpack-vue-plugin-inspector/client'
+    case 'v4':
+      return 'webpack-vue-plugin-inspector/dist/client.cjs'
+    default:
+      return ''
+  }
+}
