@@ -34,10 +34,10 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "@vue/compiler-core": "^3.2.47",
-    "@vue/compiler-sfc": "^3.2.47",
+    "@vue/compiler-dom": "^3.2.47",
     "express": "^4.18.2",
     "launch-editor": "^2.6.0",
+    "magic-string": "^0.30.0",
     "unplugin": "^1.1.0"
   },
   "devDependencies": {
