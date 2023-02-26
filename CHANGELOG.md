@@ -1,3 +1,18 @@
+## [1.0.7](https://github.com/lyx-jay/webpack-vue-plugin-spector/compare/v1.0.6...v1.0.7) (2023-02-26)
+
+
+### Bug Fixes
+
+* reset key after click ([9a0a1f9](https://github.com/lyx-jay/webpack-vue-plugin-spector/commit/9a0a1f9f95591f233eb371239113a93ed7e3ae52))
+* vue/cli4 path error ([5756768](https://github.com/lyx-jay/webpack-vue-plugin-spector/commit/57567685c36f8a6f7568b50120b976328c0f415d))
+
+
+### Features
+
+* use middle key of mouse trigger click event ([803534f](https://github.com/lyx-jay/webpack-vue-plugin-spector/commit/803534f01286c1887aad27a370d23c33490cf9da))
+
+
+
 ## [1.0.6](https://github.com/lyx-jay/webpack-vue-plugin-spector/compare/v1.0.5...v1.0.6) (2023-02-25)
 
 
