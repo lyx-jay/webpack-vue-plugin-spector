@@ -8,6 +8,7 @@ export const unplugin = createUnplugin((options: any) => {
     name: 'unplugin-webpack-vue',
     webpack(compiler) {
       let key: string = ''
+      const isWebpack5 = Number(compiler.webpack?.version?.[0]) >= 5 || false
       if (options && options.key) {
         key = options.key
       }
@@ -27,7 +28,8 @@ export const unplugin = createUnplugin((options: any) => {
           {
             loader: pathResolve('./client-loader.cjs'),
             options: {
-              key
+              key,
+              version: isWebpack5 ? 'v5' : 'v4'
             }
           }
         ]
