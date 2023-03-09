@@ -28,7 +28,8 @@ const { webpackPlugin, pluginServerV4, pluginServerV5} = require('webpack-vue-pl
 module.exports = defineConfig({
   ...
   devServer: {
-    ...domToCodeDevServerV5
+    // using pluginServerV4 when vue/cli is 4.x.x
+    ...pluginServerV5
   },
   configureWebpack: {
     plugins: [
