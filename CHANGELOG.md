@@ -1,3 +1,12 @@
+# [2.0.0-beta.1](https://github.com/lyx-jay/webpack-vue-plugin-spector/compare/v2.0.0-beta.0...v2.0.0-beta.1) (2023-03-09)
+
+
+### Bug Fixes
+
+* lack version info ([46d680a](https://github.com/lyx-jay/webpack-vue-plugin-spector/commit/46d680ace96170e21f95331fe6d9dc3330ee5bc9))
+
+
+
 # [2.0.0-beta.0](https://github.com/lyx-jay/webpack-vue-plugin-spector/compare/v1.0.7...v2.0.0-beta.0) (2023-02-27)
 
 
